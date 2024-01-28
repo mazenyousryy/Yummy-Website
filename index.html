@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yummy</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+        <!-- Font Awesome Link -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Bootstrap CSS Link -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Main CSS Link -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-black overflow-hidden">
+        <!-- ^Start Loading Screen -->
+        <div class="loading-screen bg-black position-fixed top-0 start-0 end-0 bottom-0">
+            <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                <span class="loader"></span>
+            </div>
+        </div>
+        <!-- ^End Loading Screen -->
+        <!-- &Start Header and Nav Section-->
+        <header class="position-fixed top-0 vh-100 d-flex flex-column justify-content-between align-items-center">
+            <nav class="d-flex justify-content-between align-items-center h-100">
+                <div class="side-icons h-100">
+                    <div class="mobile-btn">
+                        <!-- Mobile Screen -->
+                        <button class="menu-btn d-block border-0 bg-opacity-50 bg-light fs-3 text-black d-lg-none px-4 py-2 rounded-3 align-self-start m-4 text-center">
+                            <i class="fa-solid fa-bars menuIcon"></i>
+                        </button>
+                    </div>
+                    <!-- Full Screen -->
+                    <div class="nav-icons h-100 d-none d-lg-flex flex-lg-column justify-content-lg-between align-items-lg-center shadow-lg text-black py-4">
+                        <a href="index.html" class="navbar-brand d-block text-center">
+                            <img src="images/logo.png" alt="Yummy Website Logo" class="w-100 px-2" />
+                        </a>
+                        <button class="menu-btn border-0 bg-transparent fs-3 p-2">
+                            <i class="menu-icon fa-solid fa-bars"></i>
+                        </button>
+                        <div class="social-icons d-flex flex-column p-2">
+                            <i class="fa-solid fa-globe p-2">
+                                <a href="#"></a>
+                            </i>
+                            <i class="fa-solid fa-share-nodes p-2">
+                                <a href="#"></a>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-menu d-flex flex-column justify-content-between align-items-center bg-black text-light p-4 h-100 order-first">
+                    <ul class="navbar-nav me-auto mb-2 overflow-hidden">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-semibold" href="#search" id>Search</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-semibold" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-semibold" href="#area">Area</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-semibold" href="#ingradients">Ingradients</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-semibold" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="nav-footer text-center">
+                        <div class="social-icons d-flex justify-content-center gap-1 fs-5 mb-2">
+                            <i class="fa-brands fa-facebook p-2">
+                                <a href="#"></a>
+                            </i>
+
+                            <i class="fa-brands fa-twitter p-2">
+                                <a href="#"></a>
+                            </i>
+
+                            <i class="fa-solid fa-globe p-2">
+                                <a href="#"></a>
+                            </i>
+                        </div>
+                        <p class="fw-medium">Copyright Â&copy; 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- &End Header and Nav Section -->
+        <!-- *Start Search Section-->
+        <section class="searchSec position-relative" id="search">
+            <div class="container searchForm"></div>
+        </section>
+        <!-- !Start Contact Us Section -->
+        <section class="signUpSec" id="signUp">
+            <div class="container">
+                <div class="signUpForm"></div>
+            </div>
+        </section>
+        <!-- !End Contact Us Section -->
+        <!-- ^start of main section -->
+        <main id="mealsMain" class="text-light">
+            <div class="container">
+                <section class="mealSec">
+                    <div class="row mealsContainer g-4"></div>
+                </section>
+            </div>
+        </main>
+        <!-- ^End Search Section-->
+        <!-- Bootstrap JS Link -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery JS Link -->
+        <script src="js/jquery-3.7.1.js"></script>
+        <!-- Main JS Link -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
